@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+<body>
+    <section class="petcontainer">
+        <section class="pets">
+            <section class="pets__list">    
+            </section>
+            <section class="pets__desc">
+                <div id="image" onmouseover="displayDescription()"></div>
+                <!-- <img class="pets__desc--description" onmouseover="displayDescription()" onmouseout="normalImg()" onclick="popup()" > -->
+                <div class="middle" onclick="popup()" >
+                    <button class="text" ></button>
+                  </div>
+            <p></p>    
+            </section>
+        </section>
+        <section class="success">
+            <p>Congratulations! <a href="">Click here </a>to know more about pet parenting</p>
+        </section>
+    </section>
+
+
+    <section id="modal" >
+		<div class="modal-contents">
+				<div class="close" onclick="closeModal()">+</div>
+				<div class="matter">
+					<p id ="buy"></p>
+					
+				</div>
+				<div class="buttons">
+					<div class="submit-btn">
+						<a href="#" id="yes" class="btn active" >Yes, I'm ready!</a>
+					</div>	
+					<div class="close-btn ">
+						<a href="#" id="no" class="btn" onclick="closeModal()">Need more time</a>
+					</div>
+				</div>
+		</div>
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
